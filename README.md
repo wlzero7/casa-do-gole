@@ -41,13 +41,27 @@ casa-do-gole/
 
 Projeto recuperado parcialmente e reorganizado para portfólio.
 
-## 👨‍💻 Equipe
-
-- William Campos de Jesus
-- Elias Marques
-- Raphael Pestana
-- Pedro
+## 👨‍💻Autor
+William Campos de Jesus
 
 ## 🎯 Objetivo
 
 Aplicar conhecimentos adquiridos durante o curso Técnico em Informática por meio do desenvolvimento de uma aplicação web com foco em estrutura, design, interatividade e organização de código.
+
+## 📸 Demonstração
+
+### Página Inicial
+
+![Home](assets/home.png)
+
+### Produtos
+
+![Produtos](assets/produtos.png)
+
+### Carrinho
+
+![Carrinho](assets/carrinho.png)
+
+### Login e Cadastro
+
+![Login](assets/login.png)
