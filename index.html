@@ -1,335 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa do Gole | Bebidas Artesanais</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Gole | Bebidas Artesanais</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" id="topo">
+
+<header>
     <nav class="navbar">
-      <a href="#inicio" class="logo"><span>Casa</span> do Gole</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#diferenciais">Diferenciais</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <button class="cart-btn" id="cartBtn">Carrinho <span id="cartCount">0</span></button>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="tag">Destilaria artesanal desde 2016</p>
-        <h1>Tradição, sabor e experiências únicas.</h1>
-        <p>Conheça bebidas selecionadas com qualidade premium, identidade artesanal e apresentação sofisticada.</p>
-        <div class="hero-actions">
-          <a href="#produtos" class="btn primary">Ver produtos</a>
-          <a href="#sobre" class="btn secondary">Nossa história</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats reveal">
-      <div><strong>2016</strong><span>Fundação</span></div>
-      <div><strong>15+</strong><span>Produtos selecionados</span></div>
-      <div><strong>100%</strong><span>Experiência premium</span></div>
-    </section>
-
-    <section class="section" id="produtos">
-      <div class="section-title reveal">
-        <span>Catálogo</span>
-        <h2>Nossos Produtos</h2>
-        <p>Escolha entre gins, vodkas, rums e whiskies com visual organizado, responsivo e pronto para apresentação.</p>
-      </div>
-
-      <div class="filtros reveal">
-        <button class="filtro ativo" data-filtro="Todos">Todos</button>
-        <button class="filtro" data-filtro="Gin">Gin</button>
-        <button class="filtro" data-filtro="Vodka">Vodka</button>
-        <button class="filtro" data-filtro="Rum">Rum</button>
-        <button class="filtro" data-filtro="Whiskey">Whiskey</button>
-      </div>
-
-      <div class="produtos-grid">
-
-          <article class="produto-card" data-categoria="Whiskey" data-nome="bourbon special">
-            <div class="produto-img"><img src="img/produtos/bourbon special.jpg" alt="Bourbon Special" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Whiskey</span>
-              <h3>Bourbon Special</h3>
-              <p>Whiskey bourbon artesanal com notas de baunilha, caramelo e madeira tostada.</p>
-              <div class="produto-bottom">
-                <strong>R$ 149,90</strong>
-                <button class="add-carrinho" data-produto="Bourbon Special" data-preco="R$ 149,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Gin" data-nome="gin jardim botânico">
-            <div class="produto-img"><img src="img/produtos/gin jardim botanico.jpg" alt="Gin Jardim Botânico" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Gin</span>
-              <h3>Gin Jardim Botânico</h3>
-              <p>Gin aromático com botânicos selecionados e final cítrico refrescante.</p>
-              <div class="produto-bottom">
-                <strong>R$ 119,90</strong>
-                <button class="add-carrinho" data-produto="Gin Jardim Botânico" data-preco="R$ 119,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Gin" data-nome="gin rosa royal">
-            <div class="produto-img"><img src="img/produtos/Gin rosa royal.jpg" alt="Gin Rosa Royal" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Gin</span>
-              <h3>Gin Rosa Royal</h3>
-              <p>Gin rosé premium com sabor suave, elegante e levemente frutado.</p>
-              <div class="produto-bottom">
-                <strong>R$ 129,90</strong>
-                <button class="add-carrinho" data-produto="Gin Rosa Royal" data-preco="R$ 129,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Vodka" data-nome="grey goose">
-            <div class="produto-img"><img src="img/produtos/Grey Goose.webp" alt="Grey Goose" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Vodka</span>
-              <h3>Grey Goose</h3>
-              <p>Vodka premium internacional, cristalina e extremamente macia.</p>
-              <div class="produto-bottom">
-                <strong>R$ 189,90</strong>
-                <button class="add-carrinho" data-produto="Grey Goose" data-preco="R$ 189,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Gin" data-nome="london dry">
-            <div class="produto-img"><img src="img/produtos/london dry.jpg" alt="London Dry" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Gin</span>
-              <h3>London Dry</h3>
-              <p>Gin clássico seco, equilibrado e ideal para drinks sofisticados.</p>
-              <div class="produto-bottom">
-                <strong>R$ 109,90</strong>
-                <button class="add-carrinho" data-produto="London Dry" data-preco="R$ 109,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Whiskey" data-nome="royal salute 21 anos">
-            <div class="produto-img"><img src="img/produtos/royal salut 21 anos.webp" alt="Royal Salute 21 Anos" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Whiskey</span>
-              <h3>Royal Salute 21 Anos</h3>
-              <p>Whisky escocês envelhecido, refinado e de alto padrão.</p>
-              <div class="produto-bottom">
-                <strong>R$ 899,90</strong>
-                <button class="add-carrinho" data-produto="Royal Salute 21 Anos" data-preco="R$ 899,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Rum" data-nome="rum 8 anos">
-            <div class="produto-img"><img src="img/produtos/Rum 8 anos.webp" alt="Rum 8 Anos" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Rum</span>
-              <h3>Rum 8 Anos</h3>
-              <p>Rum envelhecido com notas de especiarias, melaço e carvalho.</p>
-              <div class="produto-bottom">
-                <strong>R$ 159,90</strong>
-                <button class="add-carrinho" data-produto="Rum 8 Anos" data-preco="R$ 159,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Rum" data-nome="rum gold">
-            <div class="produto-img"><img src="img/produtos/Rum gold.jpg" alt="Rum Gold" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Rum</span>
-              <h3>Rum Gold</h3>
-              <p>Rum dourado versátil, marcante e excelente para coquetéis.</p>
-              <div class="produto-bottom">
-                <strong>R$ 89,90</strong>
-                <button class="add-carrinho" data-produto="Rum Gold" data-preco="R$ 89,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Rum" data-nome="rum spiced premium">
-            <div class="produto-img"><img src="img/produtos/Rum spiced Premium.jpg" alt="Rum Spiced Premium" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Rum</span>
-              <h3>Rum Spiced Premium</h3>
-              <p>Rum especiado premium com aroma quente e final adocicado.</p>
-              <div class="produto-bottom">
-                <strong>R$ 129,90</strong>
-                <button class="add-carrinho" data-produto="Rum Spiced Premium" data-preco="R$ 129,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Whiskey" data-nome="single malt 12 anos">
-            <div class="produto-img"><img src="img/produtos/single malt 12 anos.webp" alt="Single Malt 12 Anos" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Whiskey</span>
-              <h3>Single Malt 12 Anos</h3>
-              <p>Whisky single malt encorpado, elegante e envelhecido por 12 anos.</p>
-              <div class="produto-bottom">
-                <strong>R$ 349,90</strong>
-                <button class="add-carrinho" data-produto="Single Malt 12 Anos" data-preco="R$ 349,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Gin" data-nome="tanqueray">
-            <div class="produto-img"><img src="img/produtos/tanqueray.webp" alt="Tanqueray" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Gin</span>
-              <h3>Tanqueray</h3>
-              <p>Gin London Dry conhecido por seu equilíbrio e personalidade.</p>
-              <div class="produto-bottom">
-                <strong>R$ 139,90</strong>
-                <button class="add-carrinho" data-produto="Tanqueray" data-preco="R$ 139,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Vodka" data-nome="vodka cristal">
-            <div class="produto-img"><img src="img/produtos/vodka cristal.jpg" alt="Vodka Cristal" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Vodka</span>
-              <h3>Vodka Cristal</h3>
-              <p>Vodka leve, limpa e ideal para drinks refrescantes.</p>
-              <div class="produto-bottom">
-                <strong>R$ 69,90</strong>
-                <button class="add-carrinho" data-produto="Vodka Cristal" data-preco="R$ 69,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Vodka" data-nome="vodka platinum">
-            <div class="produto-img"><img src="img/produtos/vodka platinum.jpg" alt="Vodka Platinum" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Vodka</span>
-              <h3>Vodka Platinum</h3>
-              <p>Vodka premium com pureza elevada e final suave.</p>
-              <div class="produto-bottom">
-                <strong>R$ 99,90</strong>
-                <button class="add-carrinho" data-produto="Vodka Platinum" data-preco="R$ 99,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Vodka" data-nome="vodka premium">
-            <div class="produto-img"><img src="img/produtos/vodka premium.jpg" alt="Vodka Premium" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Vodka</span>
-              <h3>Vodka Premium</h3>
-              <p>Vodka selecionada para quem busca qualidade e versatilidade.</p>
-              <div class="produto-bottom">
-                <strong>R$ 84,90</strong>
-                <button class="add-carrinho" data-produto="Vodka Premium" data-preco="R$ 84,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="produto-card" data-categoria="Whiskey" data-nome="whiskey premium 12 anos">
-            <div class="produto-img"><img src="img/produtos/whiskey premium 12 anos.jpg" alt="Whiskey Premium 12 Anos" loading="lazy"></div>
-            <div class="produto-info">
-              <span class="categoria">Whiskey</span>
-              <h3>Whiskey Premium 12 Anos</h3>
-              <p>Whiskey premium envelhecido, com sabor intenso e final persistente.</p>
-              <div class="produto-bottom">
-                <strong>R$ 279,90</strong>
-                <button class="add-carrinho" data-produto="Whiskey Premium 12 Anos" data-preco="R$ 279,90">Adicionar</button>
-              </div>
-            </div>
-          </article>
-      </div>
-    </section>
-
-    <section class="section sobre" id="sobre">
-      <div class="sobre-text reveal">
-        <span>Sobre nós</span>
-        <h2>A história da Casa do Gole</h2>
-        <p>Fundada em 2016, a Casa do Gole surgiu com o propósito de unir tradição e inovação na produção de bebidas artesanais de alta qualidade. Desde o início, a destilaria se destacou pelo uso de ingredientes locais e métodos sustentáveis, criando cachaças e gins que rapidamente conquistaram prêmios e apreciadores.</p>
-        <p>Com foco no cuidado em cada detalhe, a Casa do Gole tornou-se referência no mercado, reconhecida pela autenticidade e pelo compromisso com a excelência, consolidando-se como uma marca sinônimo de sabor e experiências únicas.</p>
-        <a href="#contato" class="btn primary">Fale conosco</a>
-      </div>
-      <div class="sobre-card reveal">
-        <h3>Experiência Casa do Gole</h3>
+        <h1>Casa do Gole</h1>
         <ul>
-          <li>Ingredientes selecionados</li>
-          <li>Curadoria de bebidas premium</li>
-          <li>Design sofisticado e responsivo</li>
-          <li>Atendimento direto pelo WhatsApp</li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#desenvolvedor">Desenvolvedor</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
-      </div>
-    </section>
+    </nav>
+</header>
 
-    <section class="section diferenciais" id="diferenciais">
-      <div class="section-title reveal">
-        <span>Por que escolher</span>
-        <h2>Nossos Diferenciais</h2>
-      </div>
-      <div class="diferenciais-grid">
-        <article class="diferencial-card reveal"><div>🥃</div><h3>Seleção Premium</h3><p>Produtos escolhidos para transmitir qualidade, sofisticação e confiança.</p></article>
-        <article class="diferencial-card reveal"><div>🌿</div><h3>Tradição Artesanal</h3><p>Marca com identidade visual forte, inspirada em destilarias clássicas.</p></article>
-        <article class="diferencial-card reveal"><div>📱</div><h3>Site Responsivo</h3><p>Layout adaptado para computador, tablet e celular.</p></article>
-      </div>
-    </section>
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h2>Destilaria artesanal com tradição e inovação</h2>
+        <p>Bebidas selecionadas, sabores marcantes e uma experiência única.</p>
+        <a href="#produtos" class="btn">Ver Produtos</a>
+    </div>
+</section>
 
-    <section class="section contato" id="contato">
-      <div class="section-title reveal">
-        <span>Contato</span>
-        <h2>Entre em contato</h2>
-        <p>Quer saber mais sobre nossos produtos? Fale com a Casa do Gole.</p>
-      </div>
-      <div class="contato-grid">
-        <form class="contato-form reveal">
-          <input type="text" placeholder="Seu nome" required>
-          <input type="email" placeholder="Seu e-mail" required>
-          <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-          <button type="submit" class="btn primary">Enviar mensagem</button>
-        </form>
-        <div class="contato-info reveal">
-          <h3>Informações</h3>
-          <p><strong>E-mail:</strong> atendimento@casadogole.com</p>
-          <p><strong>Telefone:</strong> (21) 99999-9999</p>
-          <p><strong>Endereço:</strong> Rio de Janeiro - RJ</p>
-          <a class="btn secondary" href="https://wa.me/5521999999999" target="_blank">Chamar no WhatsApp</a>
+<section id="sobre" class="sobre">
+    <h2>Sobre a Casa do Gole</h2>
+    <p>
+        Fundada em 2016, a Casa do Gole surgiu com o propósito de unir tradição e inovação
+        na produção de bebidas artesanais de alta qualidade. Desde o início, a destilaria se
+        destacou pelo uso de ingredientes locais e métodos sustentáveis, criando cachaças,
+        gins, vodkas, runs e whiskies que conquistam apreciadores.
+    </p>
+</section>
+
+<section id="produtos" class="produtos">
+    <h2>Nossos Produtos</h2>
+
+    <div class="produtos-grid">
+
+        <div class="produto-card">
+            <img src="Gin rosa royal.jpg" alt="Gin Rosa Royal">
+            <h3>Gin Rosa Royal</h3>
+            <p>Gin artesanal com aroma floral e sabor sofisticado.</p>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <aside class="cart-panel" id="cartPanel">
-    <div class="cart-header">
-      <h3>Meu Carrinho</h3>
-      <button id="closeCart">×</button>
+        <div class="produto-card">
+            <img src="gin jardim botanico.jpg" alt="Gin Jardim Botânico">
+            <h3>Gin Jardim Botânico</h3>
+            <p>Gin com notas herbais, cítricas e botânicas.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="Grey Goose.webp" alt="Grey Goose">
+            <h3>Grey Goose</h3>
+            <p>Vodka premium de sabor suave e refinado.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="vodka cristal.jpg" alt="Vodka Cristal">
+            <h3>Vodka Cristal</h3>
+            <p>Vodka elegante, ideal para drinks clássicos.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="vodka platinum.jpg" alt="Vodka Platinum">
+            <h3>Vodka Platinum</h3>
+            <p>Vodka premium com acabamento limpo e marcante.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="Rum 8 anos.webp" alt="Rum 8 Anos">
+            <h3>Rum 8 Anos</h3>
+            <p>Rum envelhecido com notas amadeiradas.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="Rum gold.jpg" alt="Rum Gold">
+            <h3>Rum Gold</h3>
+            <p>Rum dourado de sabor intenso e encorpado.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="Rum spiced Premium.jpg" alt="Rum Spiced Premium">
+            <h3>Rum Spiced Premium</h3>
+            <p>Rum especiado com aroma envolvente.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="bourbon special.jpg" alt="Bourbon Special">
+            <h3>Bourbon Special</h3>
+            <p>Bourbon especial com notas doces e amadeiradas.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="london dry.jpg" alt="London Dry">
+            <h3>London Dry</h3>
+            <p>Gin seco clássico, perfeito para drinks tradicionais.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="royal salut 21 anos.webp" alt="Royal Salute 21 Anos">
+            <h3>Royal Salute 21 Anos</h3>
+            <p>Whisky sofisticado e envelhecido por 21 anos.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="single malt 12 anos.webp" alt="Single Malt 12 Anos">
+            <h3>Single Malt 12 Anos</h3>
+            <p>Whisky single malt de sabor equilibrado.</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="tanqueray.webp" alt="Tanqueray">
+            <h3>Tanqueray</h3>
+            <p>Gin clássico reconhecido mundialmente.</p>
+        </div>
+
     </div>
-    <div id="cartItems" class="cart-items"><p class="cart-empty">Seu carrinho está vazio.</p></div>
-    <div class="cart-footer">
-      <strong>Total: <span id="cartTotal">R$ 0,00</span></strong>
-      <button class="btn primary finalizar">Finalizar compra</button>
+</section>
+
+<section id="desenvolvedor" class="desenvolvedor">
+    <h2>Desenvolvido por William Campos</h2>
+
+    <div class="dev-card">
+        <div>
+            <p>
+                Este site foi desenvolvido por <strong>William Campos</strong>,
+                estudante de Ciência da Computação e Técnico em Informática,
+                como projeto acadêmico e parte do seu portfólio profissional.
+            </p>
+
+            <p>
+                Tecnologias utilizadas: HTML, CSS, JavaScript e organização responsiva.
+            </p>
+
+            <div class="dev-links">
+                <a href="https://github.com/wlzero7" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/william7campos/" target="_blank">LinkedIn</a>
+                <a href="https://wa.me/5521960156602" target="_blank">WhatsApp</a>
+            </div>
+        </div>
     </div>
-  </aside>
+</section>
 
-  <footer class="footer">
-    <p>© 2026 Casa do Gole. Projeto acadêmico desenvolvido para portfólio.</p>
-  </footer>
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p><strong>Telefone:</strong> (21) 96015-6602</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5521960156602" target="_blank">(21) 96015-6602</a></p>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+    <p>© 2026 Casa do Gole. Projeto acadêmico desenvolvido por William Campos.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
