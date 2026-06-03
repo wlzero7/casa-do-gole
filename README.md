@@ -6,62 +6,97 @@ Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso Técnic
 
 A Casa do Gole é uma plataforma web criada para representar uma destilaria fictícia, com foco em apresentação de produtos, navegação intuitiva e experiência visual inspirada em sites de bebidas artesanais.
 
-O projeto simula uma loja virtual com catálogo de produtos, carrinho de compras, login/cadastro e tela de pagamento.
+O projeto simula uma loja virtual contendo:
 
-## 🚀 Tecnologias Utilizadas
+- Página inicial moderna
+- Catálogo de bebidas
+- Área institucional
+- Seção do desenvolvedor
+- Informações de contato
+- Layout responsivo para dispositivos móveis
+
+---
+
+## 🚀 Demonstração Online
+
+🔗 Site publicado:
+
+https://wlzero7.github.io/casa-do-gole/
+
+---
+
+## 🛠 Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
-- PHP (planejado/utilizado no contexto do TCC)
+- Git
+- GitHub
+- GitHub Pages
 
-## ⚙️ Funcionalidades
+---
 
-- Página inicial com identidade visual própria
-- Catálogo de produtos
-- Filtro por categoria
-- Carrinho de compras
-- Modal de login e cadastro
-- Tela de pagamento simulada
-- Seção sobre a empresa
-- Rodapé com informações de contato
+## 📱 Responsividade
 
-## 📁 Estrutura do Projeto
+O projeto foi desenvolvido com foco em:
 
-```text
-casa-do-gole/
-├── index.html
-├── css/
-│   └── style.css
-└── js/
-    └── script.js
-```
+- Desktop
+- Notebook
+- Tablet
+- Smartphone
 
-## 📌 Status do Projeto
+---
 
-Projeto recuperado parcialmente e reorganizado para portfólio.
+## 📸 Funcionalidades
 
-## 👨‍💻Autor
-William Campos de Jesus
+✔ Navegação por menu
 
-## 🎯 Objetivo
+✔ Catálogo de produtos
 
-Aplicar conhecimentos adquiridos durante o curso Técnico em Informática por meio do desenvolvimento de uma aplicação web com foco em estrutura, design, interatividade e organização de código.
+✔ Layout responsivo
 
-## 📸 Demonstração
+✔ Integração com WhatsApp
 
-### Página Inicial
+✔ Integração com GitHub
 
-![Home](assets/home.png)
+✔ Integração com LinkedIn
 
-### Produtos
+✔ Publicação via GitHub Pages
 
-![Produtos](assets/produtos.png)
+---
 
-### Carrinho
+## 👨‍💻 Autor
 
-![Carrinho](assets/carrinho.png)
+Desenvolvido por **William Campos**
 
-### Login e Cadastro
+🎓 Ciência da Computação
 
-![Login](assets/login.png)
+🎓 Técnico em Informática
+
+### Contato
+
+📧 williamjcampos6@gmail.com
+
+📱 (21) 96015-6602
+
+### Redes
+
+LinkedIn:
+
+https://www.linkedin.com/in/william-campos-de-jesus
+
+GitHub:
+
+https://github.com/wlzero7
+
+---
+
+## 📂 Repositório
+
+https://github.com/wlzero7/casa-do-gole
+
+---
+
+## 📄 Licença
+
+Projeto desenvolvido exclusivamente para fins acadêmicos e composição de portfólio.
